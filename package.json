@@ -1,0 +1,21 @@
+{
+  "name": "page-check",
+  "version": "0.1.0",
+  "description": "Checks a URL against a suite of common tests",
+  "main": "index.js",
+  "bin": {
+    "page-check": "./index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eheikes/page-check.git"
+  },
+  "author": "Eric Heikes <eheikes@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/eheikes/page-check/issues"
+  },
+  "homepage": "https://github.com/eheikes/page-check"
+}

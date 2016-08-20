@@ -10,5 +10,11 @@ exports.config = {
 			return browser.driver.get(config.baseUrl);
 		}).catch(err => console.error.bind(console.error));
 	},
-	specs: ['tests/*.js']
+	specs: ['tests/**/*.js'],
+	suites: {
+		accessibility: 'tests/a11y/*.js',
+		content: 'tests/content/*.js',
+		performance: 'tests/perf/*.js',
+		security: 'tests/security/*.js'
+  }
 };

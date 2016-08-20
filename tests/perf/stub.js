@@ -1,4 +1,4 @@
-describe('Protractor Demo App', () => {
+describe('Performance', () => {
 	it('should stub', () => {
 		expect(true).toBe(true);
 	});

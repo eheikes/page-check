@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
+const argv = require('minimist')(process.argv.slice(2));
 const Promise = require('bluebird');
 
 const path = require('path');
@@ -24,7 +25,8 @@ function runTests() {
 	console.log('Running tests...');
 	let cmd = process.platform === 'win32' ? 'protractor.cmd' : 'protractor';
 	let fullCmd = path.join('node_modules', '.bin', cmd);
-	let args = ['config.js'];
+	let url = argv._[0];
+	let args = ['config.js', '--baseUrl', url];
 	let ptor = spawn(fullCmd, args);
 	ptor.stdout.on('data', data => console.log(data.toString()));
 	ptor.stderr.on('data', data => console.log(data.toString()));

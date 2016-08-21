@@ -7,6 +7,7 @@
     "page-check": "./index.js"
   },
   "scripts": {
+    "lint": "ux-lint *.js tests/**/*.js --extend .lintrc",
     "start": "./index.js"
   },
   "dependencies": {
@@ -16,7 +17,9 @@
     "protractor": "^4.0.3",
     "selenium-standalone": "^5.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ux-lint": "^1.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eheikes/page-check.git"

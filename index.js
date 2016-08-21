@@ -2,6 +2,8 @@
 'use strict';
 
 const argv = require('minimist')(process.argv.slice(2));
+
+/* global Promise:true */
 const Promise = require('bluebird');
 
 const path = require('path');

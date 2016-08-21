@@ -12,6 +12,14 @@ Then run the tool with the URL you want to check:
 page-check http://example.com
 ```
 
+## Contributing
+
+Please add tests and maintain the existing styling when adding and updating the code.
+
+```shell
+npm run lint  # run linting
+```
+
 ## License
 
 Copyright 2016 Eric Heikes.

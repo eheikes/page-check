@@ -2,6 +2,10 @@
 
 > Tool to check a URL against a suite of common tests.
 
+This tool focuses on the end user experience, and not so much on the underlying code. (Use linters for that.)
+
+* Broken links
+
 ## Usage
 
 First, [Node.js](https://nodejs.org) must be installed on your system. Then run `npm install page-check -g` to install the tool.
